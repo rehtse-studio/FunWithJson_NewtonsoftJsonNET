@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private TMP_Text _jokeTMP;
 
-    // Update is called once per frame
-    void Update()
+    public void ShowJoke(string joke)
     {
-        
+        _jokeTMP.text = joke.ToString();
     }
 }
